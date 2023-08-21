@@ -47,6 +47,13 @@ local plugins = {
     end,
   },
 
+  {
+    'nvim-pack/nvim-spectre',
+    init = function()
+      require("core.utils").load_mappings "spectre"
+    end,
+  }
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

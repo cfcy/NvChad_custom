@@ -26,6 +26,9 @@ opt.softtabstop = 4
 -- show margin column
 opt.colorcolumn = { 128 }
 
+--show relavtive line number
+opt.rnu = true
+
 -- remove trailing whitespaces on saving file.
 autocmd({ "BufWritePre" }, {
   pattern = { "*" },

@@ -10,6 +10,8 @@ M.general = {
 M.lspconfig = {
   n = {
     ["<leader>h"] = { "<cmd> ClangdSwitchSourceHeader<CR>", "switch between src/header", opts={ noremap = true, silent = true } },
+    ["<leader>dd"] = { "<cmd>lua vim.diagnostic.disable()<CR>", "diable diagnostic", opts = { noremap = true, silent = true } },
+    ["<leader>de"] = { "<cmd>lua vim.diagnostic.enable()<CR>", "enable diagnostic", opts = { noremap = true, silent = true } },
   },
 }
 
@@ -31,6 +33,19 @@ M.tabufline = {
     },
   },
 }
--- more keybinds!
+
+M.spectre = {
+  plugin = true,
+
+  n = {
+    ["<leader>S"] = { '<cmd>lua require("spectre").toggle()<CR>', "Toggle spectre" },
+    ["<leader>sw"] = { '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', "Search current word" },
+    ["<leader>sp"] = { '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', desc = "Search on current file" },
+  },
+
+  v = {
+    ["<leader>sw"] = { '<esc><cmd>lua require("spectre").open_visual()<CR>', "Search current word" },
+  },
+}
 
 return M
