@@ -52,7 +52,11 @@ local plugins = {
     init = function()
       require("core.utils").load_mappings "spectre"
     end,
-  }
+  },
+
+  {
+    'sharkdp/fd',
+  },
 
   -- To make a plugin not be loaded
   -- {
