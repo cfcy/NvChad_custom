@@ -38,3 +38,17 @@ autocmd({ "BufWritePre" }, {
   pattern = { "*" },
   command = [[%s/\s\+$//e]],
 })
+
+--TODO: below cursor cfgs do not take effect.
+--[[ -- cursor type and size
+vim.opt.guicursor = {
+  'n-v-c-sm:block',
+  'i-ci-ve:ver25',
+  'r-cr-o:hor20'
+}
+-- Inverted cursor
+vim.cmd [[highlight Cursor guifg=NONE guibg=NONE gui=reverse]]
+
+-- Camouflage cursor
+--vim.cmd [[highlight Cursor guifg=bg guibg=fg gui=NONE]]
+--]]
