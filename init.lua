@@ -39,6 +39,9 @@ autocmd({ "BufWritePre" }, {
   command = [[%s/\s\+$//e]],
 })
 
+-- disable diagnostic.
+vim.diagnostic.disable()
+
 --TODO: below cursor cfgs do not take effect.
 --[[ -- cursor type and size
 vim.opt.guicursor = {
