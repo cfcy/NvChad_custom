@@ -5,10 +5,20 @@
 local M = {}
 
 ---@type Base46HLGroupsList
-M.override = {
-  Comment = {
-    italic = true,
-  },
+  M.override = { Comment = { italic = true, },
+  Type = { fg = "green", },
+  StorageClass = { fg = "cyan", },
+  Label = { fg = "red", },
+  ["@punctuation.bracket"] = { fg = "pink", },
+  ["@punctuation.delimiter"] = { fg = "#93a1a1", },
+  ["@keyword"] = { fg = "cyan", },
+  ["@parameter"] = { fg = "#93a1a1", },
+  ["@property"] = { fg = "#93a1a1", },
+  ["@string"] = { fg = "grey", },
+  ["@type.builtin"] = { fg = "cyan", },
+  ["@character"] = { fg = "teal", },
+  ["@constant"] = { fg = "teal", },
+  ["@constant.macro"] = { fg = "teal", },
 }
 
 ---@type HLTable
