@@ -42,6 +42,14 @@ autocmd({ "BufWritePre" }, {
 -- disable diagnostic.
 vim.diagnostic.disable()
 
+-- force c filetype for .h header file.
+autocmd({"BufNewFile", "BufRead"}, {
+  pattern = "*.h",
+  callback = function()
+    vim.bo.filetype = "c"
+  end
+})
+
 --TODO: below cursor cfgs do not take effect.
 --[[ -- cursor type and size
 vim.opt.guicursor = {
