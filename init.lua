@@ -15,6 +15,7 @@ g.mapleader = ","
 opt.listchars:append('eol:¶') -- eol:'↴'
 opt.listchars:append('tab:» ')
 opt.listchars:append('lead:·')
+opt.listchars:append('space:·')
 opt.listchars:append('trail:▫')
 opt.listchars:append('extends:❯')
 opt.listchars:append('precedes:❮')
