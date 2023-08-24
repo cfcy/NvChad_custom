@@ -48,4 +48,12 @@ M.spectre = {
   },
 }
 
+M.aerial = {
+  plugin = true,
+
+  n = {
+    ["<leader>a"] = { '<cmd>AerialToggle!<CR>', "Toggle Aerial outline" },
+  },
+}
+
 return M
