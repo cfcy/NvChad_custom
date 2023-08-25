@@ -14,7 +14,7 @@ local M = {}
   ["@keyword"] = { fg = "cyan", },
   ["@parameter"] = { fg = "#93a1a1", },
   ["@property"] = { fg = "#93a1a1", },
-  ["@string"] = { fg = "grey", },
+  ["@string"] = { fg = "light_grey", },
   ["@type.builtin"] = { fg = "cyan", },
   ["@character"] = { fg = "teal", },
   ["@constant"] = { fg = "teal", },
