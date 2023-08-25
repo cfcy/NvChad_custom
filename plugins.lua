@@ -70,6 +70,7 @@ local plugins = {
 
   {
     'stevearc/aerial.nvim',
+    lazy = false,
     init = function()
       require("core.utils").load_mappings "aerial"
     end,
@@ -80,6 +81,8 @@ local plugins = {
           vim.keymap.set('n', '{', '<cmd>AerialPrev<CR>', {buffer = bufnr})
           vim.keymap.set('n', '}', '<cmd>AerialNext<CR>', {buffer = bufnr})
       end,
+
+      filter_kind = false,
     },
     config = function(_, opts)
       require("aerial").setup(opts)
