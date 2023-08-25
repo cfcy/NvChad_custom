@@ -43,6 +43,11 @@ local plugins = {
     opts = overrides.telescope,
   },
 
+  {
+    "NvChad/nvterm",
+    opts = overrides.nvterm,
+  },
+
   -- Install a plugin
   {
     "max397574/better-escape.nvim",

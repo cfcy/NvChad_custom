@@ -68,4 +68,19 @@ M.telescope = {
   },
 }
 
+M.nvterm = {
+  terminals = {
+    type_opts = {
+      float = {
+        row = 0.1,
+        col = 0.1,
+        width = 0.75,
+        height = 0.75,
+      },
+      horizontal = { location = "rightbelow", split_ratio = .75, },
+      vertical = { location = "rightbelow", split_ratio = .75 },
+    },
+  },
+}
+
 return M
