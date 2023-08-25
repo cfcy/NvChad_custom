@@ -54,6 +54,18 @@ M.nvimtree = {
       },
     },
   },
+
+  filters = {
+    dotfiles = false,
+    exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
+    custom = { "build", ".git", "*.o", "Release", "release", "Debug", "debug", ".cache" },
+  },
+}
+
+M.telescope = {
+  defaults = {
+    file_ignore_patterns = { "node_modules", ".git", "build", "*.o" },
+  },
 }
 
 return M
