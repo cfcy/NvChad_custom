@@ -70,7 +70,7 @@ local plugins = {
 
   {
     'stevearc/aerial.nvim',
-    lazy = false,
+    lazy = true, -- lazy load to disable it.
     init = function()
       require("core.utils").load_mappings "aerial"
     end,
@@ -86,6 +86,17 @@ local plugins = {
     },
     config = function(_, opts)
       require("aerial").setup(opts)
+    end,
+  },
+
+  {
+    'simrat39/symbols-outline.nvim',
+    lazy = false,
+    init = function()
+      require("core.utils").load_mappings "symbols_outline"
+    end,
+    config = function(_, opts)
+      require("symbols-outline").setup(opts)
     end,
   },
 

@@ -56,4 +56,12 @@ M.aerial = {
   },
 }
 
+M.symbols_outline = {
+  plugin = true,
+
+  n = {
+    ["<leader>o"] = { '<cmd>:SymbolsOutline<CR>', "Toggle Symbols-Outline" },
+  },
+}
+
 return M

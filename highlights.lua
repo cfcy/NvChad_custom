@@ -5,7 +5,8 @@
 local M = {}
 
 ---@type Base46HLGroupsList
-  M.override = { Comment = { italic = true, },
+  M.override = {
+  Comment = { italic = false, },
   Type = { fg = "green", },
   StorageClass = { fg = "cyan", },
   Label = { fg = "red", },
