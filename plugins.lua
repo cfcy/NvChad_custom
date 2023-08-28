@@ -70,7 +70,7 @@ local plugins = {
 
   {
     'stevearc/aerial.nvim',
-    lazy = true, -- lazy load to disable it.
+    enabled = false,
     init = function()
       require("core.utils").load_mappings "aerial"
     end,
