@@ -4,6 +4,7 @@ local M = {}
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    ["gm"] = { "<cmd>call cursor(0, virtcol('$')/2)<CR>", "go to middle of line", opts={ noremap = true, silent = true } },
   },
 }
 
