@@ -31,6 +31,9 @@ opt.softtabstop = 4
 -- show margin column
 opt.colorcolumn = { 128 }
 
+-- set case sensitive.
+opt.ignorecase = false
+
 --show relavtive line number
 opt.rnu = true
 
