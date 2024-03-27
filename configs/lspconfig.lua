@@ -20,6 +20,7 @@ lspconfig.clangd.setup{
 
   cmd = {
     "clangd",
+    "--compile-commands-dir=./",
     "--background-index",
     "--suggest-missing-includes"
   },
@@ -36,5 +37,5 @@ lspconfig.clangd.setup{
              lspconfig.util.find_package_json_root();
 }
 
--- 
+--
 -- lspconfig.pyright.setup { blabla}

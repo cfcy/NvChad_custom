@@ -134,6 +134,14 @@ local plugins = {
     end,
   },
 
+  {
+    'mfussenegger/nvim-dap',
+  },
+
+  {
+    'rcarriga/nvim-dap-ui',
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
